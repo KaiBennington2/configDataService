@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: servidorEureka
+
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: localhost
+    leaseReneWalIntervalInSecond: 15
+    leaseExpirationDurationInSecond: 15
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    enableSelfPreservation: false
+    responseCacheUpdateIntervalMs: 15
+
+logging:
+  level:
+    com:
+      netflix:
+        eureka: off
+        discovery: off
