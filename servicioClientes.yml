@@ -1,0 +1,40 @@
+jasypt:
+   encryptor:
+      password: ${jasyptpwd:secretkey}
+      algorithm: PBEWithMD5AndDES
+
+server:
+   port: 8001
+   servlet:
+      context-path: /clientes
+      session:
+         timeout: 21600s
+springdoc:
+   swagger-ui:
+      path: /swagger-ui.html
+spring:
+   datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      type: com.zaxxer.hikari.HikariDataSource
+      jdbcUrl: jdbc:mysql://localhost:3306/ceiba_adn_clientes?useSSL=false&serverTimezone=UTC
+      username: root
+      password: root
+      hikari:
+         poolName: pool
+   application:
+      name: servicioClientes
+
+eureka:
+   client:
+      instance:
+         preferIpAddress: true
+      serviceUrl:
+         defaultZone: http://localhost:8761/eureka/
+
+management:
+   security:
+      enabled: false
+   endpoints:
+      web:
+         exposure:
+            include: all
