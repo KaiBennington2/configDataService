@@ -6,7 +6,7 @@ jasypt:
 server:
    port: 8000
    servlet:
-      context-path: /Contratos
+      context-path: /contratos
       session:
          timeout: 21600s
 springdoc:
