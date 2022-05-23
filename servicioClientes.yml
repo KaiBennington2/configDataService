@@ -40,3 +40,10 @@ management:
       web:
          exposure:
             include: all
+
+servicioClientes:
+   ribbon:
+      eureka:
+         enabled: false
+      listOfServers: localhost:${server.port}
+      ServerListRefreshInterval: 15000
