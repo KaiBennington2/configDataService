@@ -26,6 +26,7 @@ spring:
 
 eureka:
    instance:
+      hostname: localhost
       preferIpAddress: true
    client:
       enabled: true
