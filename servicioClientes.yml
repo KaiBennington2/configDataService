@@ -26,8 +26,8 @@ spring:
 
 eureka:
    instance:
-      hostname: ${spring.application.name}
-      preferIpAddress: false
+      hostname: localhost
+      preferIpAddress: true
    client:
       enabled: true
       serviceUrl:
