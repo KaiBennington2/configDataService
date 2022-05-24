@@ -7,7 +7,7 @@ server:
 
 eureka:
   instance:
-    hostname: ${spring.application.name}
+    hostname: localhost
     leaseReneWalIntervalInSecond: 15
     leaseExpirationDurationInSecond: 15
   client:

@@ -6,7 +6,7 @@ jasypt:
 server:
    port: 8001
    servlet:
-      context-path: /clientes
+      # context-path: /clientes
       session:
          timeout: 21600s
 springdoc:
