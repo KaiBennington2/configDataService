@@ -39,7 +39,7 @@ management:
    endpoints:
       web:
          exposure:
-            include: all
+            include: "*"
 
 Feign:
    hystrix:
