@@ -41,6 +41,10 @@ management:
          exposure:
             include: all
 
+Feign:
+   hystrix:
+      enabled: true
+
 servicioClientes:
    ribbon:
       eureka:

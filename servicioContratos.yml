@@ -40,6 +40,10 @@ management:
          exposure:
             include: all
 
+Feign:
+   hystrix:
+      enabled: true
+
 servicioContratos:
    ribbon:
       eureka:
