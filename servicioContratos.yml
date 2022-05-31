@@ -50,17 +50,17 @@ management:
          cors:
             allowed-origins: true
 
-Feign:
-   hystrix:
+feign:
+   circuitbreaker:
       enabled: true
 
 hystrix:
-  dashboard:
-    proxy-stream-allow-list: '*'
+   dashboard:
+      proxy-stream-allow-list: '*'
 
-servicioContratos:
-   ribbon:
-      eureka:
-         enabled: false
-      listOfServers: localhost:${server.port}
-      ServerListRefreshInterval: 15000
+# servicioContratos:
+#    ribbon:
+#       eureka:
+#          enabled: false
+#       listOfServers: localhost:${server.port}
+#       ServerListRefreshInterval: 15000
