@@ -35,10 +35,20 @@ eureka:
 management:
    security:
       enabled: false
+   endpoint:
+      health:
+         enabled: true
+         show-details: always
    endpoints:
+      jmx:
+         exposure:
+            include: *
       web:
          exposure:
-            include: "*"
+            include: *
+         base-path: /actuator
+         cors:
+            allowed-origins: true
 
 Feign:
    hystrix:
@@ -46,7 +56,7 @@ Feign:
 
 hystrix:
   dashboard:
-    proxy-stream-allow-list: "*"
+    proxy-stream-allow-list: *
 
 servicioContratos:
    ribbon:
