@@ -42,10 +42,10 @@ management:
    endpoints:
       jmx:
          exposure:
-            include: *
+            include: '*'
       web:
          exposure:
-            include: *
+            include: '*'
          base-path: /actuator
          cors:
             allowed-origins: true
@@ -56,7 +56,7 @@ Feign:
 
 hystrix:
   dashboard:
-    proxy-stream-allow-list: *
+    proxy-stream-allow-list: '*'
 
 servicioContratos:
    ribbon:
