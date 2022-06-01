@@ -24,7 +24,7 @@ spring:
                -  Path=/clientes/**
 
          -  id: servicioContratos
-            uri: lb://servicioContratos
+            uri: lb://servicioContratos/clientes
             predicates:
                - Path=/contratos/**
 
