@@ -21,12 +21,12 @@ spring:
          -  id: servicioClientes
             uri: lb://servicioClientes
             predicates:
-               -  Path=/clientes/**
+               -  Path=/clientese/**
 
          -  id: servicioContratos
-            uri: lb://servicioContratos/clientes
+            uri: lb://servicioContratos
             predicates:
-               - Path=/contratos/**
+               - Path=/contratos/**,/clientes/**
 
 management:
   endpoints:
