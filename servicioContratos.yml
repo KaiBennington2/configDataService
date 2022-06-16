@@ -23,6 +23,11 @@ spring:
          poolName: pool
    application:
       name: servicioContratos
+   rabbitmq:
+      host: localhost
+      port: 5672
+      username: guest
+      password: guest
 
 eureka:
    instance:

@@ -23,6 +23,12 @@ spring:
          poolName: pool
    application:
       name: servicioClientes
+   rabbitmq:
+      host: localhost
+      port: 5672
+      username: guest
+      password: guest
+
 
 eureka:
    instance:
@@ -65,3 +71,4 @@ hystrix:
 #          enabled: false
 #       listOfServers: localhost:${server.port}
 #       ServerListRefreshInterval: 15000
+
